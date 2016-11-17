@@ -1,0 +1,11 @@
+.project
+.classpath
+.settings/
+bin/
+*.bat
+*.sh
+doc/
+!gmath.bat
+src/com/gmoneycorp/test/
+*.jar
+META-INT/
