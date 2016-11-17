@@ -3,7 +3,7 @@ package com.gmoneycorp.gmathbot;
 import net.dv8tion.jda.core.entities.MessageChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
-import com.gmoneycorp.gmath.Main;
+import com.gmoneycorp.gmath.Runner;
 
 import java.util.Arrays;
 
@@ -18,6 +18,6 @@ public class CommandHandler {
 		String[] args = Arrays.copyOfRange(split, 1, split.length);
 
 		//Checks which command was given and responds accordingly
-		channel.sendMessage(Main.runner(args)).queue();
+		channel.sendMessage(Runner.runner(args)).queue();
 	}
 }
