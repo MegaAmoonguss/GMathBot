@@ -35,7 +35,7 @@ public class BotListener extends ListenerAdapter {
 			}
 			
 			//Invoke the command handler
-			if (msg.startsWith("!gmath") && author.getId() != event.getJDA().getSelfUser().getId())
+			if (msg.startsWith("!gmath") && author.getId() != event.getJDA().getSelfUser().getId() && !msg.equals("!gmath"))
 				CommandHandler.handle(event);
 		}
 	}
